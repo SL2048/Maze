@@ -44,7 +44,7 @@ public class RandomMaze {
     }
     
     private void union(int i1, int j1, int i2, int j2){
-        int sum = this.maze[i1][j1] + this.len[i2][j2];
+        int sum = this.len[i1][j1] + this.len[i2][j2];
         
         if(this.getLen(i1, j1) >= this.getLen(i2, j2)){
             int s = this.maze[i2][j2];
